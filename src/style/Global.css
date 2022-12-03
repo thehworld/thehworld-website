@@ -1,0 +1,345 @@
+:root {
+    --step--3: clamp(0.62rem, 0.55rem + 0.33vw, 0.8rem);
+    --step--2: clamp(0.78rem, 0.65rem + 0.66vw, 1.12rem);
+    --step--1: clamp(0.94rem, 0.76rem + 0.9vw, 1.4rem);
+    --step-0: clamp(1.13rem, 0.88rem + 1.22vw, 1.75rem);
+    --step-1: clamp(1.35rem, 1.02rem + 1.63vw, 2.19rem);
+    --step-2: clamp(1.62rem, 1.19rem + 2.17vw, 2.73rem);
+    --step-3: clamp(1.84rem, 1.20rem + 2.60vw, 3.42rem);
+    --step-4: clamp(2.33rem, 1.58rem + 3.79vw, 4.27rem);
+    --step-5: clamp(2.8rem, 1.81rem + 4.96vw, 5.34rem);
+}
+
+/* fonts  */
+/* fonts  */
+/* fonts  */
+
+@font-face {
+    font-family: GelionMedium;
+    src: url(../assets/fonts/gelion-cufonfonts/Gelion\ Medium.ttf);
+}
+
+@font-face {
+    font-family: MonteserratBold;
+    src: url(../assets/fonts/Montserrat/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: Monteserrat;
+    src: url(../assets/fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
+
+.GelionMedium{
+    font-family: "GelionMedium", sans-serif;
+}
+.MonteserratBold{
+    font-family: "MonteserratBold", sans-serif;
+}
+.Monteserrat{
+    font-family: "Monteserrat", sans-serif;
+}
+
+
+
+/* header */
+/* header */
+/* header */
+
+
+.header-logo{
+    width: 70px;
+}
+
+.nav-links{
+    font-size: 1.3rem;
+    margin-left: 40px;
+}
+
+
+/* home  */
+/* home  */
+/* home  */
+
+
+.slant-container {
+top: 40px;
+width: 100%;
+margin-top: 40px;
+border-radius: 40px;
+background: #fff;
+-webkit-transform: skewY(-2.5deg);
+-moz-transform: skewY(-2.5deg);
+-ms-transform: skewY(-2.5deg);
+-o-transform: skewY(-2.5deg);
+transform: skewY(-2.5deg);
+-webkit-backface-visibility: hidden;
+box-shadow: 8px 30px 30px -10px #D9E6E8
+}
+
+.ing-main-title{
+    padding: 4rem;
+    text-align: center;
+    color: #023709;
+    -webkit-transform: skewY(2.5deg);
+    -moz-transform: skewY(2.5deg);
+    -ms-transform: skewY(2.5deg);
+    -o-transform: skewY(2.5deg);
+    transform: skewY(2.5deg);
+    -webkit-backface-visibility: hidden;
+}
+body{
+    background-color: #EEF3F6;
+}
+
+.home-img{
+    width: 550px;
+}
+.ing-img{
+    width: 60%;
+}
+
+.ing-sub{
+    font-size: var(--step--1);
+    text-align: center;
+    margin-top: 25px;
+}
+
+.cont-in-sc{
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+}
+.cont-ing-sc{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;   
+}
+.header-main-btn{
+    margin-top: 1rem;
+    padding: 10px 50px;
+    background-color: #4FB23A;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: large;
+    font-family: "GelionMedium", sans-serif;
+  }
+
+  .cont-in-sc-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    /* margin-top: 8%; */
+    -webkit-transform: skewY(2.5deg);
+    -moz-transform: skewY(2.5deg);
+    -ms-transform: skewY(2.5deg);
+    -o-transform: skewY(2.5deg);
+    transform: skewY(2.5deg);
+    -webkit-backface-visibility: hidden;
+  }
+  .cont-in-sc-content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 30px;
+    /* margin-top: 15%; */
+    -webkit-transform: skewY(2.5deg);
+    -moz-transform: skewY(2.5deg);
+    -ms-transform: skewY(2.5deg);
+    -o-transform: skewY(2.5deg);
+    transform: skewY(2.5deg);
+    -webkit-backface-visibility: hidden;
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .home-img{
+        width: 350px;
+    }  
+    .cont-in-sc-content{
+        padding: 50px;
+    }
+    
+  }
+
+  @media only screen and (max-width: 992px) {
+    .cont-in-sc{
+        grid-template-columns: 1fr;
+    }
+    .home-img{
+        width: 550px;
+    }
+    .cont-in-sc-content{
+        align-items: center;
+        text-align: center;
+    }
+    .cont-ing-sc{
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    
+    .home-img{
+        width: 450px;
+    }
+    .cont-ing-sc{
+        grid-template-columns: 1fr;
+    }
+   
+  }
+  @media only screen and (max-width: 992px){
+    .home-img{
+        width: 350px;
+    }
+  }
+  @media only screen and (max-width: 420px){
+    .home-img{
+        width: 250px;
+    }
+  }
+  @media only screen and (max-width: 390px){
+    .home-img{
+        width: 200px;
+    }
+  }
+
+  .home-title{
+    font-size: var(--step-3);
+    color: #023709;
+  }
+
+  .home-sub{
+    font-size: 1.5rem;
+    color: #40760D;
+  }
+
+  /* about  */
+  /* about  */
+  /* about  */
+
+  .about-title{
+    text-align: center;
+    padding: 20px 0;
+    font-size: var(--step-2);
+    color: #023709;
+  }
+  .about-sub{
+    text-align: center;
+    padding: 20px 0;
+    font-size: var(--step--2);
+  }
+
+  /* blogs */
+  /* blogs */
+  /* blogs */
+
+  .blog-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem;
+  }
+
+  .blog-card{
+    margin: 1rem;
+  }
+
+  @media only screen and (max-width: 992px){
+    .blog-container{
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media only screen and (max-width: 500px){
+    .blog-container{
+        grid-template-columns: 1fr;
+    }
+  }
+
+  .blog-card-title{
+    font-size: var(--step--1);
+  }
+  .blog-card-content{
+    font-size: var(--step--3);
+  }
+
+
+  /* blog header */
+  /* blog header */
+  /* blog header */
+
+.blog--header{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+}
+
+.blogdetails-card-title{
+    font-size: var(--step-3);
+    color: #131313;
+}
+
+
+/* blog content */
+/* blog content */
+/* blog content */
+
+.blog-details-cardcontent{
+    padding: 3rem 0;
+}
+.blog-imageside{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+@media only screen and (max-width: 1200px){
+    .blog-imageside{
+        grid-template-columns: 1fr;
+    }
+  }
+
+/* contact */
+/* contact */
+/* contact */
+
+.contact-container{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 0.5rem;
+  min-height: 70vh;
+}
+@media only screen and (max-width: 770px){
+  .contact-container{
+      grid-template-columns: 1fr;
+  }
+  .contact-form-in{
+    width: 100%;
+  }
+}
+.contact-form{
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.contact-form-in{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.contact-details{
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.contact-box{
+  box-shadow: 5px 5px 18px #999999;
+  padding: 2rem;
+  border-radius: 5px;
+}
+.credits{
+  color: #B2B2B2;
+}
