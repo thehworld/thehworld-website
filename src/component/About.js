@@ -16,7 +16,6 @@ function About() {
             and reaps the benefits it promises. We promise that its going to be one of the most valuable assets of your
             daily routine and life since its been formulated with passion, care and urge to create a better hair space.
             so come lets embark on this journey of a hairy carey environment together.
-
             </p>
         </div>
     )
