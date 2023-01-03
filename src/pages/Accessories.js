@@ -13,6 +13,7 @@ import {
 import blogsimg from "../assets/images/blogs.jpg"
 import { useParams } from "react-router-dom";
 import { Container } from "react-bootstrap";
+import { Helmet } from "react-helmet";
 
 
 function Accessories() {
@@ -29,29 +30,38 @@ function Accessories() {
 
                 case "stools&trolley":
                     setAccessoriesType({folderName: "stoolsandtrolley", title: "STOOLS & TROLLEY"});
+                    document.title = 'STOOLS & TROLLEY'
                 break;
                 case "fancy_studio_salon_chair":
                     setAccessoriesType({folderName: "fancystudio", title: "FANCY STUDIO SALON CHAIR"});
+                    document.title = 'FANCY STUDIO SALON CHAIR'
                 break;
                 case "imported_salon_chair":
                     setAccessoriesType({folderName: "importedchair", title: "IMPORTED SALON CHAIR"});
+                    document.title = 'IMPORTED SALON CHAIR'
                 break;
                 case "styling_unisex_salon_chair":
                     setAccessoriesType({folderName: "stylingchair", title: "STYLING UNISEX SALON CHAIR"});
+                    document.title = 'STYLING UNISEX SALON CHAIR'
                 break;
                 case "manicure_and_pedicure":
                     setAccessoriesType({folderName: "manicure", title: "MANICURE AND PEDICURE CHAIR MASSAGER"});
+                    document.title = 'MANICURE AND PEDICURE CHAIR MASSAGER'
                 break;
                 case "hair_wash_station":
                     setAccessoriesType({folderName: "hairwash", title: "HAIR WASH STATION"});
+                    document.title = 'HAIR WASH STATION'
                 break;
                 case "massagingbeds":
                     setAccessoriesType({folderName: "beds", title: "MASSAGING / FACIAL BEDS"});
+                    document.title = 'MASSAGING / FACIAL BEDS'
                 break;
                 case "jacuzzitub":
                     setAccessoriesType({folderName: "jacuzzi", title: "JACUZZI TUB"});
+                    document.title = 'JACUZZI TUB'
                 break;
             }
+            
         }
     }, [])
 
@@ -80,7 +90,11 @@ function Accessories() {
 
     return(
         <Container>
-        
+           <Helmet>
+                <meta charSet="utf-8" />
+                <meta name="description" content="Innovative hair & skin care products made out of nature." />
+           
+            </Helmet>
         <div>
             <div style={{display: "flex", justifyContent: "center", alignItems: "center", padding: "10px"}}>
             <div className="MonteserratBold acc-heading">{accessoriesType.title}</div>
