@@ -7,10 +7,17 @@ import {
     MDBCheckbox,
     MDBBtn
   } from 'mdb-react-ui-kit';
+import Helmet from "react-helmet";
 
 function Contact() {
     return(
         <Container>
+                <Helmet>
+                <meta charSet="utf-8" />
+                <title>The H World - Contact Us</title>
+                <meta name="description" content="Innovative hair & skin care products made out of nature." />
+           
+            </Helmet>
             <div className="contact-container">
                 <div className="contact-form">
                     <div className="contact-form-in">

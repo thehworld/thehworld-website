@@ -3,11 +3,19 @@ import home from "../assets/images/home.png"
 import { Container } from 'react-bootstrap';
 import About from '../component/About';
 import Ingredient from '../component/Ingredient';
+import { Helmet } from 'react-helmet';
+
 
 function Home() {
     return(
         <div>
         <div >
+        <Helmet>
+                <meta charSet="utf-8" />
+                <title>The H World - Home</title>
+                <meta name="description" content="Innovative hair & skin care products made out of nature." />
+           
+            </Helmet>
             <Container className="slant-container">
                 <div className='cont-in-sc'>
                     <div className='cont-in-sc-img'>

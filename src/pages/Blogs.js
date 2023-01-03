@@ -12,10 +12,17 @@ import { Container } from 'react-bootstrap';
 import blogs from "../assets/images/blogs.jpg"
 import posts from '../data/blogCards';
 import { Link } from 'react-router-dom';
+import Helmet from 'react-helmet';
 
 export default function Blogs() {
   return (
     <Container>
+          <Helmet>
+                <meta charSet="utf-8" />
+                <title>The H World - Blogs</title>
+                <meta name="description" content="Innovative hair & skin care products made out of nature." />
+           
+            </Helmet>
     <div className='blog-container'>
     
     {posts.map((post, index) => {
